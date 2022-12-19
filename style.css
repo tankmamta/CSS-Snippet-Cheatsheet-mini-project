@@ -45,19 +45,19 @@ main {
   margin-top: 50px;
 }
 
-.container {
+.flexcontainer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.row {
+.cards {
   display: flex;
   flex-basis: 33.3%;
 }
 
-.card {
+.box {
   border: 2px dashed var(--gin);
   margin: 30px 10px;
   padding: 10px;
@@ -66,18 +66,18 @@ main {
   cursor: pointer;
 }
 
-.card .heading {
+.box .heading {
   margin: -40px 10px 0 10px;
   background-color: var(--outer-space);
 }
 
-.card p {
+.box p {
   color: var(--heliotrope);
   height: 40px;
   vertical-align: middle;
 }
 
-.card pre {
+.box pre {
   background: linear-gradient(#8b07b3, #a056a7);
   height: 180px;
   padding: 20px;
@@ -88,13 +88,13 @@ main {
 }
 
 @media onyl screen and (min-width: 768px) {
-  .row {
+  .cards {
     flex-basis: 100%;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .row {
+  .cards {
     flex-basis: 50%;
   }
 }
